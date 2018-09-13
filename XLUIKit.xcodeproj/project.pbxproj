@@ -35,7 +35,7 @@
 		499FFD3C214A07EA002FA332 /* nav-bar-white-back-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 499FFD30214A07EA002FA332 /* nav-bar-white-back-btn.png */; };
 		499FFD3D214A07EA002FA332 /* horizontal-separator-default.png in Resources */ = {isa = PBXBuildFile; fileRef = 499FFD31214A07EA002FA332 /* horizontal-separator-default.png */; };
 		499FFD3E214A07EA002FA332 /* nav-bar-dark-close-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 499FFD32214A07EA002FA332 /* nav-bar-dark-close-btn.png */; };
-		499FFD40214A143A002FA332 /* XLUIKit.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 499FFD3F214A143A002FA332 /* XLUIKit.podspec */; };
+		499FFD42214A1792002FA332 /* XLUIKit.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 499FFD41214A1792002FA332 /* XLUIKit.podspec */; };
 		49DE3C712148EF6C007DEB45 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DE3C702148EF6C007DEB45 /* AppDelegate.m */; };
 		49DE3C742148EF6C007DEB45 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DE3C732148EF6C007DEB45 /* ViewController.m */; };
 		49DE3C772148EF6C007DEB45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49DE3C752148EF6C007DEB45 /* Main.storyboard */; };
@@ -139,7 +139,7 @@
 		499FFD30214A07EA002FA332 /* nav-bar-white-back-btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav-bar-white-back-btn.png"; sourceTree = "<group>"; };
 		499FFD31214A07EA002FA332 /* horizontal-separator-default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "horizontal-separator-default.png"; sourceTree = "<group>"; };
 		499FFD32214A07EA002FA332 /* nav-bar-dark-close-btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav-bar-dark-close-btn.png"; sourceTree = "<group>"; };
-		499FFD3F214A143A002FA332 /* XLUIKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = XLUIKit.podspec; sourceTree = "<group>"; };
+		499FFD41214A1792002FA332 /* XLUIKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = XLUIKit.podspec; sourceTree = SOURCE_ROOT; };
 		49DE3C6C2148EF6C007DEB45 /* XLUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XLUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49DE3C6F2148EF6C007DEB45 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		49DE3C702148EF6C007DEB45 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -261,7 +261,7 @@
 		49DE3C6E2148EF6C007DEB45 /* XLUIKit */ = {
 			isa = PBXGroup;
 			children = (
-				499FFD3F214A143A002FA332 /* XLUIKit.podspec */,
+				499FFD41214A1792002FA332 /* XLUIKit.podspec */,
 				499FFD26214A07EA002FA332 /* Resource */,
 				49DE3C932148F0AB007DEB45 /* Classes */,
 				49DE3C6F2148EF6C007DEB45 /* AppDelegate.h */,
@@ -631,7 +631,7 @@
 				499FFD35214A07EA002FA332 /* nav-bar-dark-close-btn@2x.png in Resources */,
 				49DE3C7C2148EF6D007DEB45 /* LaunchScreen.storyboard in Resources */,
 				499FFD37214A07EA002FA332 /* horizontal-separator-default@2x.png in Resources */,
-				499FFD40214A143A002FA332 /* XLUIKit.podspec in Resources */,
+				499FFD42214A1792002FA332 /* XLUIKit.podspec in Resources */,
 				499FFD34214A07EA002FA332 /* horizontal-separator-default@3x.png in Resources */,
 				499FFD3A214A07EA002FA332 /* nav-bar-white-back-btn@3x.png in Resources */,
 				499FFD3C214A07EA002FA332 /* nav-bar-white-back-btn.png in Resources */,
