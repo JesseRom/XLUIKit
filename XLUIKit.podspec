@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
 s.name         = "XLUIKit"
-s.version      = "0.0.1"
+s.version      = "0.0.2"
 s.summary      = "The function extension of the common system UI object is organized in the form of catogry, which is convenient to use."
 s.homepage     = "https://github.com/JesseRom/XLUIKit"
 s.license      = { :type => "MIT", :file => "LICENSE" }
