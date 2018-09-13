@@ -10,6 +10,6 @@
 
 @interface NSData(XLEncrypt)
 
-- (NSString *)mzd_md5;
+- (NSString *)xl_md5;
 
 @end

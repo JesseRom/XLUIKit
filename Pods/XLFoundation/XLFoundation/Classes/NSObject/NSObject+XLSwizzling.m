@@ -11,7 +11,7 @@
 
 @implementation NSObject(XLSwizzling)
 
-- (void)mzd_hookSelector:(SEL)originalSelector
+- (void)xl_hookSelector:(SEL)originalSelector
 withDefaultImplementSelector:(SEL)defaultSelector
         swizzledSelector:(SEL)swizzledSelector
                 forClass:(Class)aClass;
@@ -49,7 +49,7 @@ withDefaultImplementSelector:(SEL)defaultSelector
     }
 }
 
-+ (void)mzd_changeSelector:(SEL)sel withSelector:(SEL)swizzledSel
++ (void)xl_changeSelector:(SEL)sel withSelector:(SEL)swizzledSel
 {
     Method originalMethod = class_getInstanceMethod(self, sel);
     Method swizzledMethod = class_getInstanceMethod(self, swizzledSel);
@@ -65,7 +65,7 @@ withDefaultImplementSelector:(SEL)defaultSelector
     }
 }
 
-- (id)mzd_performSelector:(SEL)sel withObjects:(NSArray *)objects
+- (id)xl_performSelector:(SEL)sel withObjects:(NSArray *)objects
 {
     // 方法签名(方法的描述)
     NSMethodSignature *signature = [[self class] instanceMethodSignatureForSelector:sel];

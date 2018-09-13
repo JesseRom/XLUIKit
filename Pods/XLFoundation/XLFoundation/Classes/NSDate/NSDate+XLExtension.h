@@ -13,22 +13,22 @@
 /**
  @return 2018年8月2日
  */
-- (NSString *)mzd_mediumStyleString;
+- (NSString *)xl_mediumStyleString;
 
 /**
  contain YES return 2018年8月2日 22:53
  contain NO return 22:53
  */
-- (NSString *)mzd_mediumStyleStringContainDate:(BOOL)contain;
+- (NSString *)xl_mediumStyleStringContainDate:(BOOL)contain;
 
 /**
  @return 年龄
  */
-- (NSInteger)mzd_ageOfBirth;
+- (NSInteger)xl_ageOfBirth;
 
 /**
  @return 星座
  */
-- (NSString *)mzd_zodiacSign;
+- (NSString *)xl_zodiacSign;
 
 @end

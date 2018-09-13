@@ -17,13 +17,13 @@
  *
  *  @return 序列化后的 json string，转换失败返回 nil
  */
-+ (NSString *)mzd_stringWithJSONObject:(id)object;
++ (NSString *)xl_stringWithJSONObject:(id)object;
 
 /**
  *  将当前 字符串转换成 JSON object
  *
  *  @return 如果当前为 json 字符串，则返回序列化后的 json object，否则返回 nil
  */
-- (id)mzd_JSONObject;
+- (id)xl_JSONObject;
 
 @end

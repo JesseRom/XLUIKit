@@ -10,6 +10,6 @@
 
 @interface NSObject(XLExtension)
 
-- (id)mzd_performSelector:(SEL)selector withObjects:(NSArray *)objects;
+- (id)xl_performSelector:(SEL)selector withObjects:(NSArray *)objects;
 
 @end

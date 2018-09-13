@@ -10,12 +10,12 @@
 
 @implementation NSString(Compare)
 
-- (BOOL)mzd_isLargerThan:(NSString *)str {
+- (BOOL)xl_isLargerThan:(NSString *)str {
     NSComparisonResult result = [self compare:str];
     return (result == NSOrderedDescending);
 }
 
-- (BOOL)mzd_isLargerOrEqualThan:(NSString *)str {
+- (BOOL)xl_isLargerOrEqualThan:(NSString *)str {
     NSComparisonResult result = [self compare:str];
     return (result != NSOrderedAscending);
 }

@@ -7,25 +7,25 @@
 //
 
 #import "NSDate+XLExtension.h"
-#import "NSLocale+XLExtenstion.h"
+#import "NSLocale+XLExtension.h"
 
 @implementation NSDate(XLExtension)
 
-- (NSString *)mzd_mediumStyleString {
+- (NSString *)xl_mediumStyleString {
     NSDateFormatter *df = [[NSDateFormatter alloc] init];
-    df.locale = [NSLocale mzd_simplifiedChineseLocale];
+    df.locale = [NSLocale xl_simplifiedChineseLocale];
     df.dateStyle = NSDateFormatterMediumStyle;
     
     return [df stringFromDate:self];
 }
 
-- (NSString *)mzd_mediumStyleStringContainDate:(BOOL)contain {
+- (NSString *)xl_mediumStyleStringContainDate:(BOOL)contain {
     static NSDateFormatter *df_ = nil;
     if (!df_) {
         df_ = [[NSDateFormatter alloc] init];
     }
     
-    df_.locale = [NSLocale mzd_simplifiedChineseLocale];
+    df_.locale = [NSLocale xl_simplifiedChineseLocale];
     
     NSString *formatString = nil;
     if (contain) {
@@ -42,7 +42,7 @@
     return [df_ stringFromDate:self];
 }
 
-- (NSInteger)mzd_ageOfBirth {
+- (NSInteger)xl_ageOfBirth {
     // 出生日期转换 年月日
     NSDateComponents *components1 = [[NSCalendar currentCalendar] components:NSDayCalendarUnit | NSMonthCalendarUnit | NSYearCalendarUnit fromDate:self];
     NSInteger brithDateYear  = [components1 year];
@@ -65,7 +65,7 @@
 }
 
 // 星座
-- (NSString *)mzd_zodiacSign {
+- (NSString *)xl_zodiacSign {
     NSArray *days  = @[@20, @19, @21, @20, @21, @22, @23, @23, @23, @24, @23, @22];
     NSArray *signs = @[
                        @"摩羯座",

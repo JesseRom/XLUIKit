@@ -7,7 +7,7 @@ target 'XLUIKit' do
 
   # Pods for XLUIKit
    pod 'SDWebImage', '~> 3.8.0'
-   pod 'XLFoundation', '~> 0.0.1'
+   pod 'XLFoundation', '~> 0.0.2'
 
 
   target 'XLUIKitTests' do

@@ -10,7 +10,7 @@
 
 @implementation NSObject(XLExtension)
 
-- (id)mzd_performSelector:(SEL)selector withObjects:(NSArray *)objects
+- (id)xl_performSelector:(SEL)selector withObjects:(NSArray *)objects
 {
     // 方法签名(方法的描述)
     NSMethodSignature *signature = [[self class] instanceMethodSignatureForSelector:selector];

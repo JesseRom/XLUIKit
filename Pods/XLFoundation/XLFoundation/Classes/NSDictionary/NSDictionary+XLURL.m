@@ -10,7 +10,7 @@
 
 @implementation NSDictionary(XLURL)
 
-- (NSString *)mzd_joinURLQueries
+- (NSString *)xl_joinURLQueries
 {
     if (self.allKeys.count > 0) {
         NSEnumerator *keyEnumerator = [self keyEnumerator];

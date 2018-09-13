@@ -10,6 +10,6 @@
 
 @interface NSArray(XLExtension)
 
-- (NSArray *)mzd_reversed;
+- (NSArray *)xl_reversed;
 
 @end

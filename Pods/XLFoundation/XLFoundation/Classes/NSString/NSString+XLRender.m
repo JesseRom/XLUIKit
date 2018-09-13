@@ -10,7 +10,7 @@
 
 @implementation NSString(XLRender)
 
-- (NSString *)mzd_urlEncode {
+- (NSString *)xl_urlEncode {
     // Encode all the reserved characters, per RFC 3986
     // (<http://www.ietf.org/rfc/rfc3986.txt>)
     NSMutableCharacterSet *set = [[NSCharacterSet URLQueryAllowedCharacterSet] mutableCopy];
@@ -18,7 +18,7 @@
     return [self stringByAddingPercentEncodingWithAllowedCharacters:set];
 }
 
-- (NSString *)mzd_urlDecode {
+- (NSString *)xl_urlDecode {
     NSMutableString *resultString = [NSMutableString stringWithString:self];
     [resultString replaceOccurrencesOfString:@"+"
                                   withString:@" "
@@ -27,14 +27,14 @@
     return [resultString stringByRemovingPercentEncoding];
 }
 
-- (NSString *)mzd_URLStringByAppendingQueryString:(NSString *)queryString {
+- (NSString *)xl_URLStringByAppendingQueryString:(NSString *)queryString {
     if (queryString.length > 0) {
         return [NSString stringWithFormat:@"%@%@%@", self, [self rangeOfString:@"?"].length > 0 ? @"&" : @"?", queryString];
     }
     return self;
 }
 
-- (NSURL *)mzd_URLByAppendingQueryString:(NSString *)queryString {
+- (NSURL *)xl_URLByAppendingQueryString:(NSString *)queryString {
     if (queryString.length > 0) {
         NSString *URLString = [NSString stringWithFormat:@"%@%@%@", self, [self rangeOfString:@"?"].length > 0 ? @"&" : @"?", queryString];
         return [NSURL URLWithString:URLString];

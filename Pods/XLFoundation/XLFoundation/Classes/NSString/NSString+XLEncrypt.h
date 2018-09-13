@@ -15,22 +15,22 @@
  *
  *  @return 字节数
  */
-- (NSInteger)mzd_bytes;
+- (NSInteger)xl_bytes;
 
 /**
  *  将 16 进制字符串转换为 10 进制数
  *
  *  @return 10 进制数
  */
-- (NSUInteger)mzd_hexValue;
+- (NSUInteger)xl_hexValue;
 
 /**
  *  计算所在位置为 filePath 的文件 MD5 值
  */
-+ (NSString *)mzd_md5OfFile:(NSString *)filePath;
++ (NSString *)xl_md5OfFile:(NSString *)filePath;
 
-- (NSString *)mzd_md5;
+- (NSString *)xl_md5;
 
-- (NSString *)mzd_sha1WithKey:(NSString *)key;
+- (NSString *)xl_sha1WithKey:(NSString *)key;
 
 @end

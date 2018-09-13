@@ -10,7 +10,7 @@
 
 @implementation NSArray(XLExtension)
 
-- (NSArray *)mzd_reversed {
+- (NSArray *)xl_reversed {
     NSMutableArray *result = [NSMutableArray array];
     NSEnumerator *reversed = self.reverseObjectEnumerator;
     id obj;

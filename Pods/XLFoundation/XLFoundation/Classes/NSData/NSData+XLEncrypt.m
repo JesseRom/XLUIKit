@@ -11,7 +11,7 @@
 
 @implementation NSData(XLEncrypt)
 
-- (NSString *)mzd_md5 {
+- (NSString *)xl_md5 {
     // Create byte array of unsigned chars
     unsigned char md5Buffer[CC_MD5_DIGEST_LENGTH];
     

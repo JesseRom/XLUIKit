@@ -2,11 +2,11 @@ PODS:
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
-  - XLFoundation (0.0.1)
+  - XLFoundation (0.0.2)
 
 DEPENDENCIES:
   - SDWebImage (~> 3.8.0)
-  - XLFoundation (~> 0.0.1)
+  - XLFoundation (~> 0.0.2)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -15,8 +15,8 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
-  XLFoundation: b2ab2480c3392fe2695577768b5fb9ded455c558
+  XLFoundation: b390210f82b213d1ecae424aa9656d66cf2da580
 
-PODFILE CHECKSUM: 7e309af539309f139dba2cfb88cccb35698a5df1
+PODFILE CHECKSUM: 9f46c02cf4d847484aa97f33b6a34bb435066a1e
 
 COCOAPODS: 1.5.3

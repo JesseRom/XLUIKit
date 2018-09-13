@@ -10,12 +10,12 @@
 
 @interface NSObject(XLSwizzling)
 
-- (void)mzd_hookSelector:(SEL)originalSelector
+- (void)xl_hookSelector:(SEL)originalSelector
 withDefaultImplementSelector:(SEL)defaultSelector
         swizzledSelector:(SEL)swizzledSelector
                 forClass:(Class)aClass;
 
-+ (void)mzd_changeSelector:(SEL)sel withSelector:(SEL)swizzledSel;
-- (id)mzd_performSelector:(SEL)sel withObjects:(NSArray *)objects;
++ (void)xl_changeSelector:(SEL)sel withSelector:(SEL)swizzledSel;
+- (id)xl_performSelector:(SEL)sel withObjects:(NSArray *)objects;
 
 @end

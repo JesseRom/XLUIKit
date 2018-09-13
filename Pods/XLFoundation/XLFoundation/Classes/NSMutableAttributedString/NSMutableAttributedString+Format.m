@@ -11,7 +11,7 @@
 
 @implementation NSMutableAttributedString(Format)
 
-+ (instancetype)mzd_strikethroughWithText:(NSString *)text {
++ (instancetype)xl_strikethroughWithText:(NSString *)text {
     NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:text ?: @""];
     NSRange range = NSMakeRange(0, attributedString.length);
     [attributedString addAttribute:NSStrikethroughStyleAttributeName value:@(NSUnderlineStyleSingle) range:range];

@@ -1,5 +1,5 @@
 //
-//  NSLocale+XLExtenstion.h
+//  NSLocale+XLExtension.h
 //  XLFoundation
 //
 //  Created by HONGLUO on 2018/8/2.
@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSLocale(XLExtenstion)
+@interface NSLocale(XLExtension)
 
-+ (NSLocale *)mzd_simplifiedChineseLocale;
++ (NSLocale *)xl_simplifiedChineseLocale;
 
 @end

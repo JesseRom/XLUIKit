@@ -10,7 +10,7 @@
 
 @interface NSString(Compare)
 
-- (BOOL)mzd_isLargerThan:(NSString *)str;
-- (BOOL)mzd_isLargerOrEqualThan:(NSString *)str;
+- (BOOL)xl_isLargerThan:(NSString *)str;
+- (BOOL)xl_isLargerOrEqualThan:(NSString *)str;
 
 @end

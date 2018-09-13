@@ -10,7 +10,7 @@
 
 @interface NSData(XLExtension)
 
-+ (BOOL)mzd_isPNGForImageData:(NSData *)data;
-+ (BOOL)mzd_isJPEGForImageData:(NSData *)data;
++ (BOOL)xl_isPNGForImageData:(NSData *)data;
++ (BOOL)xl_isJPEGForImageData:(NSData *)data;
 
 @end

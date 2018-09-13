@@ -10,17 +10,17 @@
 
 @implementation NSData(XLExtension)
 
-+ (BOOL)mzd_isPNGForImageData:(NSData *)data {
-    NSString *type = [NSData mzd_contentTypeForImageData:data];
++ (BOOL)xl_isPNGForImageData:(NSData *)data {
+    NSString *type = [NSData xl_contentTypeForImageData:data];
     return [type isEqualToString:@"image/png"];
 }
 
-+ (BOOL)mzd_isJPEGForImageData:(NSData *)data {
-    NSString *type = [NSData mzd_contentTypeForImageData:data];
++ (BOOL)xl_isJPEGForImageData:(NSData *)data {
+    NSString *type = [NSData xl_contentTypeForImageData:data];
     return [type isEqualToString:@"image/jpeg"];
 }
 
-+ (NSString *)mzd_contentTypeForImageData:(NSData *)data {
++ (NSString *)xl_contentTypeForImageData:(NSData *)data {
     uint8_t c;
     [data getBytes:&c length:1];
     switch (c) {

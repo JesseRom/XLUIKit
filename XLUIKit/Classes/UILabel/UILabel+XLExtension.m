@@ -60,6 +60,6 @@
 }
 
 - (void)xl_strikethrough {
-    self.attributedText = [NSMutableAttributedString mzd_strikethroughWithText:self.text];
+    self.attributedText = [NSMutableAttributedString xl_strikethroughWithText:self.text];
 }
 @end

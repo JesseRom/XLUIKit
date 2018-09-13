@@ -10,7 +10,7 @@
 
 @implementation NSString(XLExtension)
 
-+ (NSString *)mzd_parseString:(NSString*)string separatorIndexs:(NSArray *)indexs separator:(NSString *)separator {
++ (NSString *)xl_parseString:(NSString*)string separatorIndexs:(NSArray *)indexs separator:(NSString *)separator {
     if (!string) return nil;
     NSMutableString *mStr = [NSMutableString stringWithString:[string stringByReplacingOccurrencesOfString:separator withString:@""]];
     [indexs enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
@@ -20,7 +20,7 @@
     return  mStr;
 }
 
-- (CGFloat)mzd_fitsWidthWithFont:(UIFont *)font height:(CGFloat)height
+- (CGFloat)xl_fitsWidthWithFont:(UIFont *)font height:(CGFloat)height
 {
     CGSize constraintSize = CGSizeMake(MAXFLOAT, height);
     NSDictionary *attribute = @{NSFontAttributeName: font};
@@ -28,7 +28,7 @@
     return ceilf(realSize.width);
 }
 
-- (CGFloat)mzd_fitsHeightWithFont:(UIFont *)font width:(CGFloat)width
+- (CGFloat)xl_fitsHeightWithFont:(UIFont *)font width:(CGFloat)width
 {
     CGSize constraintSize = CGSizeMake(width, MAXFLOAT);
     NSDictionary *attribute = @{NSFontAttributeName: font};
@@ -36,7 +36,7 @@
     return ceilf(realSize.height);
 }
 
-- (CGFloat)mzd_fitsHeightWithFont:(UIFont *)font size:(CGSize)size
+- (CGFloat)xl_fitsHeightWithFont:(UIFont *)font size:(CGSize)size
 {
     CGSize realSize;
     NSDictionary *attribute = @{NSFontAttributeName: font};
@@ -48,7 +48,7 @@
 }
 
 #pragma mark - 星座
-+ (NSString *)mzd_zodiacSignWithMonth:(NSInteger)m day:(NSInteger)d
++ (NSString *)xl_zodiacSignWithMonth:(NSInteger)m day:(NSInteger)d
 {
     NSString *zodiacString = @"魔羯水瓶双鱼白羊金牛双子巨蟹狮子处女天秤天蝎射手魔羯";
     NSString *zodiacFormat = @"102123444543";
@@ -70,14 +70,14 @@
     return result;
 }
 
-+ (NSString *)mzd_zodiacSignWithTs:(NSTimeInterval)ts
++ (NSString *)xl_zodiacSignWithTs:(NSTimeInterval)ts
 {
     NSDate *today = [NSDate dateWithTimeIntervalSince1970:ts];
     NSCalendar *gregorian = [NSCalendar currentCalendar];
     NSDateComponents *weekdayComponents = [gregorian components:(NSCalendarUnitMonth | NSCalendarUnitDay) fromDate:today];
     NSInteger month = [weekdayComponents month];
     NSInteger day = [weekdayComponents day];
-    return [NSString mzd_zodiacSignWithMonth:month day:day];
+    return [NSString xl_zodiacSignWithMonth:month day:day];
 }
 
 @end

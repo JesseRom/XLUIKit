@@ -10,6 +10,6 @@
 
 @interface NSDictionary(XLExtension)
 
-- (NSDictionary *)mzd_filterEmptyData;
+- (NSDictionary *)xl_filterEmptyData;
 
 @end

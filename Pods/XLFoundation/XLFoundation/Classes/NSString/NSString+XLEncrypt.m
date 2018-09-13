@@ -13,7 +13,7 @@
 
 @implementation NSString(XLEncrypt)
 
-- (NSInteger)mzd_bytes
+- (NSInteger)xl_bytes
 {
     NSInteger count = 0;
     unichar c       = 0;
@@ -28,14 +28,14 @@
     return count;
 }
 
-- (NSUInteger)mzd_hexValue
+- (NSUInteger)xl_hexValue
 {
     NSUInteger result = 0;
     sscanf([self UTF8String], "%lx", (unsigned long *)&result);
     return result;
 }
 
-+ (NSString *)mzd_md5OfFile:(NSString *)filePath {
++ (NSString *)xl_md5OfFile:(NSString *)filePath {
     NSFileHandle *handle = [NSFileHandle fileHandleForReadingAtPath:filePath];
     if(!handle)
     {
@@ -64,7 +64,7 @@
     return outputString;
 }
 
-- (NSString *)mzd_md5
+- (NSString *)xl_md5
 {
     if (self == nil || [self length] == 0) return nil;
     
@@ -81,7 +81,7 @@
     return outputString;
 }
 
-- (NSString *)mzd_sha1WithKey:(NSString *)key
+- (NSString *)xl_sha1WithKey:(NSString *)key
 {
     if(self == nil || [self length] == 0)
         return nil;

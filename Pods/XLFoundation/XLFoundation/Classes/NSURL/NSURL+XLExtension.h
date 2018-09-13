@@ -15,7 +15,7 @@
  *
  *  @return 返回 query string 中参数的字典，忽略不以 key=value 存在的参数
  */
-- (NSDictionary *)mzd_parameters;
+- (NSDictionary *)xl_parameters;
 
 /**
  *  在当前 URL 后添加 URL query string，如果当前字符串本身没有 query string，则补上 ‘？’ 连接符，如果当前已经有 query string 则后补上 ‘&’ 连接符
@@ -24,8 +24,8 @@
  *
  *  @return 拼接后的 NSURL 对象，如果拼接后的字符串不符合 URL 格式，则返回 nil
  */
-- (NSURL *)mzd_URLByAppendingQueryString:(NSString *)queryString;
+- (NSURL *)xl_URLByAppendingQueryString:(NSString *)queryString;
 
-- (NSURL *)mzd_URLByAddQueriesFromDictionary:(NSDictionary *)dictionary;
+- (NSURL *)xl_URLByAddQueriesFromDictionary:(NSDictionary *)dictionary;
 
 @end

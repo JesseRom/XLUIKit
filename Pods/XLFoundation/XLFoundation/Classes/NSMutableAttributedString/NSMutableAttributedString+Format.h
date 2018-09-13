@@ -10,6 +10,6 @@
 
 @interface NSMutableAttributedString(Format)
 
-+ (instancetype)mzd_strikethroughWithText:(NSString *)text;
++ (instancetype)xl_strikethroughWithText:(NSString *)text;
 
 @end

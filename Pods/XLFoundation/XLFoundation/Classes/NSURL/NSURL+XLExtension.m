@@ -11,7 +11,7 @@
 
 @implementation NSURL(XLExtension)
 
-- (NSDictionary *)mzd_parameters
+- (NSDictionary *)xl_parameters
 {
     NSString *parametersString = self.query;
     NSArray *array = [parametersString componentsSeparatedByString:@"&"];
@@ -32,7 +32,7 @@
     return nil;
 }
 
-- (NSURL *)mzd_URLByAppendingQueryString:(NSString *)queryString
+- (NSURL *)xl_URLByAppendingQueryString:(NSString *)queryString
 {
     if (queryString.length > 0) {
         NSString *URLString = [[NSString alloc] initWithFormat:@"%@%@%@", self.absoluteString, self.query ? @"&" : @"?", queryString];
@@ -42,8 +42,8 @@
     return self;
 }
 
-- (NSURL *)mzd_URLByAddQueriesFromDictionary:(NSDictionary *)dictionary {
-    NSString *query = [dictionary mzd_joinURLQueries];
+- (NSURL *)xl_URLByAddQueriesFromDictionary:(NSDictionary *)dictionary {
+    NSString *query = [dictionary xl_joinURLQueries];
     if (query.length > 0) {
         NSURLComponents *comp = [NSURLComponents componentsWithURL:self resolvingAgainstBaseURL:YES];
         if (comp.query.length > 0) {

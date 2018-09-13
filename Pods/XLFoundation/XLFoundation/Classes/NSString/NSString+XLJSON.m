@@ -10,7 +10,7 @@
 
 @implementation NSString(XLJSON)
 
-- (id)mzd_JSONObject
+- (id)xl_JSONObject
 {
     if (!self) {
         return nil;
@@ -21,14 +21,14 @@
     id jsonObject = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&error];
     
     if (error) {
-        NSException *e = [NSException exceptionWithName:@"MZD JSONParser Error" reason:error.localizedDescription userInfo:nil];
+        NSException *e = [NSException exceptionWithName:@"XL JSONParser Error" reason:error.localizedDescription userInfo:nil];
         [e raise];
     }
     
     return jsonObject;
 }
 
-+ (NSString *)mzd_stringWithJSONObject:(id)object
++ (NSString *)xl_stringWithJSONObject:(id)object
 {
     if (!self) {
         return nil;
@@ -38,7 +38,7 @@
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:object options:NSJSONWritingPrettyPrinted error:&error];
     
     if (error) {
-        NSException *e = [NSException exceptionWithName:@"MZD JSONParser Error" reason:error.localizedDescription userInfo:nil];
+        NSException *e = [NSException exceptionWithName:@"XL JSONParser Error" reason:error.localizedDescription userInfo:nil];
         [e raise];
     }
     

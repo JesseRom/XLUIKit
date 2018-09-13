@@ -11,6 +11,6 @@
 @interface NSDictionary(XLURL) 
 
 //e.g. @{@"name":@"luohong",@"age":@(30)} --> name=luohong&age=30
-- (NSString *)mzd_joinURLQueries;
+- (NSString *)xl_joinURLQueries;
 
 @end

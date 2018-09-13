@@ -14,13 +14,13 @@
  * String by escaping for url argument.
  * @return Encoding url string.
  */
-- (NSString *)mzd_urlEncode;
+- (NSString *)xl_urlEncode;
 
 /**
  * String by unescaping from url argument.
  * @return Decoding url string.
  */
-- (NSString *)mzd_urlDecode;
+- (NSString *)xl_urlDecode;
 
 /**
  *  在当前字符串后添加 URL query string，如果当前字符串本身没有 query string，则补上 ‘？’ 连接符，如果当前已经有 query string 则后补上 ‘&’ 连接符
@@ -29,8 +29,8 @@
  *
  *  @return 拼接后的字符串
  */
-- (NSString *)mzd_URLStringByAppendingQueryString:(NSString *)queryString;
+- (NSString *)xl_URLStringByAppendingQueryString:(NSString *)queryString;
 
-- (NSURL *)mzd_URLByAppendingQueryString:(NSString *)queryString;
+- (NSURL *)xl_URLByAppendingQueryString:(NSString *)queryString;
 
 @end

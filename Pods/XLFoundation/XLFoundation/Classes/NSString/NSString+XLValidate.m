@@ -10,13 +10,13 @@
 
 @implementation NSString(XLValidate)
 
-- (BOOL)mzd_isValidEmail {
+- (BOOL)xl_isValidEmail {
     NSString *regex   = @"^[A-Z0-9a-z\\._\\%\\+\\-]+@[A-Za-z0-9\\.]+\\.[A-Za-z]{2,4}$";
     NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regex];
     return [pred evaluateWithObject:self];
 }
 
-- (BOOL)mzd_isValidPhone {
+- (BOOL)xl_isValidPhone {
     // 130、131、132、133、134、135、136、137、138、139
     // 145、147
     // 150、151、152、153、155、156、157、158、159
@@ -27,7 +27,7 @@
     return [emailTest evaluateWithObject:self];
 }
 
-- (BOOL)mzd_isValidIDCard {
+- (BOOL)xl_isValidIDCard {
     if (self.length<18) {
         return NO;
     }
@@ -67,13 +67,13 @@
     }
 }
 
-- (BOOL)mzd_isAllNumbers {
+- (BOOL)xl_isAllNumbers {
     NSString *regex        = @"^[0-9]*$";
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regex];
     return [predicate evaluateWithObject:self];
 }
 
-- (BOOL)mzd_isContainDecimal:(BOOL)decimal letter:(BOOL)letter chineseCharacter:(BOOL)chinese other:(NSString *)other {
+- (BOOL)xl_isContainDecimal:(BOOL)decimal letter:(BOOL)letter chineseCharacter:(BOOL)chinese other:(NSString *)other {
     NSMutableString *regex = [NSMutableString stringWithFormat:@"^["];
     if (letter) {
         [regex appendString:@"a-zA-Z"];
@@ -91,23 +91,23 @@
     return [predicate evaluateWithObject:self];
 }
 
-- (BOOL)mzd_isDecimal {
-    return [self mzd_isContainDecimal:YES letter:NO chineseCharacter:NO other:nil];
+- (BOOL)xl_isDecimal {
+    return [self xl_isContainDecimal:YES letter:NO chineseCharacter:NO other:nil];
 }
 
 
-- (BOOL)mzd_isInteger {
+- (BOOL)xl_isInteger {
     NSInteger value;
     NSScanner *sc = [NSScanner scannerWithString:self];
     [sc scanInteger:&value];
     return [sc isAtEnd];
 }
 
-- (BOOL)mzd_isChineseCharacter {
-    return [self mzd_isContainDecimal:NO letter:NO chineseCharacter:YES other:nil];
+- (BOOL)xl_isChineseCharacter {
+    return [self xl_isContainDecimal:NO letter:NO chineseCharacter:YES other:nil];
 }
 
-- (BOOL)mzd_isBlank {
+- (BOOL)xl_isBlank {
     NSCharacterSet *set = [NSCharacterSet whitespaceAndNewlineCharacterSet];
     NSString *trimmedString = [self stringByTrimmingCharactersInSet:set];
     return trimmedString.length == 0;

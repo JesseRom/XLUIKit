@@ -10,12 +10,12 @@
 
 @implementation NSDictionary(XLExtension)
 
-- (NSDictionary *)mzd_filterEmptyData
+- (NSDictionary *)xl_filterEmptyData
 {
     NSMutableDictionary *result = [self mutableCopy];
     [result enumerateKeysAndObjectsUsingBlock:^(NSString *key, id obj, BOOL *stop) {
         if ([obj isKindOfClass:NSDictionary.class]) {
-            result[key] = [obj mzd_filterEmptyData];
+            result[key] = [obj xl_filterEmptyData];
         } else if ([obj isKindOfClass:NSString.class]) {
             if ([obj isEqualToString:@"<null>"]) {
                 result[key] = nil;
