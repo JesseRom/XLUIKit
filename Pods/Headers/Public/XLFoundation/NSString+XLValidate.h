@@ -1,0 +1,1 @@
+../../../XLFoundation/XLFoundation/Classes/NSString/NSString+XLValidate.h
